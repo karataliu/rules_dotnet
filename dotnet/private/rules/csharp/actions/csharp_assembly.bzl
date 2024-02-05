@@ -389,7 +389,7 @@ def _compile(
     format_ref_arg(args, depset(framework_files, transitive = [refs]))
 
     # analyzers
-    args.add_all(analyzer_assemblies, format_each = "/analyzer:%s")
+    # args.add_all(analyzer_assemblies, format_each = "/analyzer:%s")
     args.add_all(additionalfiles, format_each = "/additionalfile:%s")
 
     # .cs files
