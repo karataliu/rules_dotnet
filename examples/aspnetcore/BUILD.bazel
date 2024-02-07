@@ -13,7 +13,7 @@ csharp_binary(
         "WeatherForecast.cs",
     ],
     project_sdk = "web",
-    target_frameworks = ["net6.0"],
+    target_frameworks = ["net8.0"],
     targeting_packs = [
         "@paket.example_deps//microsoft.aspnetcore.app.ref",
         "@paket.example_deps//microsoft.netcore.app.ref",
@@ -40,5 +40,5 @@ publish_binary(
         ],
     }),
     self_contained = True,
-    target_framework = "net6.0",
+    target_framework = "net8.0",
 )
