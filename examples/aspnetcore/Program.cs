@@ -12,5 +12,5 @@ var app = builder.Build();
 app.UseAuthorization();
 
 app.MapControllers();
-
+app.MapGet("/test", () => "");
 app.Run("http://localhost:8000");
